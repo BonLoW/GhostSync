@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <!-- 必须的 meta 标签 -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap 的 CSS 文件 -->
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <title>Ghost Sync</title>
+    </head>
+    <body>
+        <div class="container pageheader">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>Ghost Sync</h1>
+                </div>
+            </div>
+        </div>
+        <div class ="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>Ghost Sync 是一个匿名的交流软件，你可以在其中与自己的团队自由的聊天</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--登录以现在使用！-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>登录以现在使用！</h2>
+                </div>
+            </div>
+            <div class = "bn">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <a href="{% url 'login' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">登录</a>
+                    </div>
+                </div>
+        </div>
+    </body>
+</html>
